@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="L2j_CT0_Emu_DataPack" default="build" basedir=".">
+
+    <property name="build" location="build" />
+    <property name="build.sql" location="${build}/sql" />
+    <property name="build.tools" location="${build}/tools" />
+
+    <target name="build" depends="init" description="Synchronizes build space contents with project.">
+        <sync todir="${build.sql}">
+            <fileset dir="${basedir}/sql">
+                <include name="*.*" />
+            </fileset>
+        </sync>
+        <sync todir="${build.tools}">
+            <fileset dir="${basedir}/tools">
+                <include name="*.*" />
+                <exclude name="database_installer.rc" />
+                <exclude name="*.txt" />
+                <exclude name="*.log" />
+                <exclude name="*backup.sql" />
+            </fileset>
+        </sync>
+    </target>
+
+    <target name="init" description="Create the output directories. Do nothing if dirs were already created">
+        <mkdir dir="${build}" />
+    </target>
+
+</project>
