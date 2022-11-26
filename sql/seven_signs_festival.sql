@@ -10,13 +10,13 @@ CREATE TABLE IF NOT EXISTS `seven_signs_festival`
 );
 
 INSERT IGNORE INTO `seven_signs_festival`
-VALUES (0, "DAWN", 1, 0, 0, ""),
-       (1, "DAWN", 1, 0, 0, ""),
-       (2, "DAWN", 1, 0, 0, ""),
-       (3, "DAWN", 1, 0, 0, ""),
-       (4, "DAWN", 1, 0, 0, ""),
-       (0, "DUSK", 1, 0, 0, ""),
-       (1, "DUSK", 1, 0, 0, ""),
-       (2, "DUSK", 1, 0, 0, ""),
-       (3, "DUSK", 1, 0, 0, ""),
-       (4, "DUSK", 1, 0, 0, "");
+VALUES (0, 'DAWN', 1, 0, 0, ''),
+       (1, 'DAWN', 1, 0, 0, ''),
+       (2, 'DAWN', 1, 0, 0, ''),
+       (3, 'DAWN', 1, 0, 0, ''),
+       (4, 'DAWN', 1, 0, 0, ''),
+       (0, 'DUSK', 1, 0, 0, ''),
+       (1, 'DUSK', 1, 0, 0, ''),
+       (2, 'DUSK', 1, 0, 0, ''),
+       (3, 'DUSK', 1, 0, 0, ''),
+       (4, 'DUSK', 1, 0, 0, '');
